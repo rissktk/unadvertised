@@ -1632,15 +1632,11 @@ body {
     height: 50px;
     font-size: 30px;
     font-weight: 300;
-    padding: 0 0 5px 0;
-    background-color: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
-    border-radius: 0;
 }
 
 .work-request--information input[type="text"],
-.work-request--information input[type="email"] {
+.work-request--information input[type="email"]
+.work-request--information input[type="textarea"] {
     width: 100%;
     padding: 0 0 5px 0;
     background-color: transparent;
