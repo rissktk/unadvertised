@@ -1626,17 +1626,9 @@ body {
     font-weight: 300;
 }
 
-.information-description {
-    position: relative;
-    width: 100%;
-    height: 50px;
-    font-size: 30px;
-    font-weight: 300;
-}
-
 .work-request--information input[type="text"],
 .work-request--information input[type="email"]
-.work-request--information input[type="textarea"] {
+ {
     width: 100%;
     padding: 0 0 5px 0;
     background-color: transparent;
