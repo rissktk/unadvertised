@@ -5,11 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projet - Unadvertised</title>
   <link rel="stylesheet" href="assets/css/main.css">
+  <style>
+    .project-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .project-image {
+      flex: 1;
+      max-width: 400px;
+      margin-right: 20px;
+    }
+    .project-image img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .project-content {
+      flex: 2;
+      max-width: 600px;
+    }
+    .project-category {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .project-title {
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .project-description {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+    @media (max-width: 768px) {
+      .project-container {
+        flex-direction: column;
+        text-align: center;
+      }
+      .project-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="perspective effect-rotate-left">
     <div class="container">
-      <div class="outer-nav--return"></div>
       <div id="viewport" class="l-viewport">
         <div class="l-wrapper">
           <header class="header">
@@ -23,27 +67,20 @@
             </div>
           </header>
           <main class="l-main-content">
-            <section class="project">
-              <div class="project--banner">
-                <h1>Titre du Projet</h1>
-                <p>Description détaillée du projet, mettant en avant les objectifs, les défis et les résultats obtenus.</p>
+            <section class="project-container">
+              <div class="project-image">
                 <img src="assets/img/project-image.jpg" alt="Projet visuel">
               </div>
-              <div class="project--details">
-                <h2>Détails du projet</h2>
-                <p>Technologies utilisées, méthodologie adoptée et impacts mesurés.</p>
-                <a href="#" class="cta">Voir le projet en action</a>
+              <div class="project-content">
+                <h5 class="project-category">Catégorie du Projet</h5>
+                <h2 class="project-title">Titre du Projet</h2>
+                <p class="project-description">Description détaillée du projet, mettant en avant les objectifs, les défis et les résultats obtenus.</p>
               </div>
             </section>
           </main>
         </div>
       </div>
     </div>
-    <ul class="outer-nav">
-      <li><a href="index.html">Accueil</a></li>
-      <li class="is-active">Projet</li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
   </div>
   <script src="assets/js/functions-min.js"></script>
 </body>
