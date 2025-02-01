@@ -7,39 +7,56 @@
   <link rel="stylesheet" href="assets/css/main.css">
   <style>
     .project-container {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-    }
-    .project-image {
-      flex: 1;
-      max-width: 400px;
-      margin-right: 20px;
-      padding-top: 100px;
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.project-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1400px; /* Augmenté pour plus de largeur */
+    width: 90%; /* Utilisation de 90% pour mieux s’adapter aux écrans larges */
+    gap: 100px; /* Encore plus d’espace entre l’image et le texte */
+}
+
+.project-image {
+    flex: 1;
+    max-width: 600px; /* Augmenté pour une image plus large */
+    height: auto;
+    border-radius: 10px;
+}
+
+.project-text {
+    flex: 1.5; /* Permet au texte de prendre plus d’espace */
+    text-align: left;
+}
+
+.project-category {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #666;
+}
+
+.project-title {
+    font-size: 36px; /* Titre plus grand */
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.project-description {
+    font-size: 18px; /* Texte légèrement plus grand */
+    color: #333;
+    line-height: 1.8; /* Meilleure lisibilité */
+}
+    
     .project-image img {
       width: 100%;
       border-radius: 10px;
-    }
-    .project-content {
-      flex: 2;
-      max-width: 600px;
-      padding-top: 100px;
-    }
-    .project-category {
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-    }
-    .project-title {
-      font-size: 28px;
-      font-weight: bold;
-    }
-    .project-description {
-      font-size: 16px;
-      line-height: 1.5;
     }
     @media (max-width: 768px) {
       .project-container {
