@@ -504,7 +504,8 @@ body {
     -ms-flex-align: center;
     align-items: center;
     text-decoration: none;
-    color: #fff
+    color: #fff;
+    width: 100px;
 }
 
 .header--logo p {
