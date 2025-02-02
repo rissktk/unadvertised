@@ -30,6 +30,11 @@
     font-style: normal
 }
 
+html, body {
+    overflow-x: hidden; /* Bloque le scroll horizontal */
+    max-width: 100vw; /* Évite le dépassement */
+}
+
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
     font-family: sans-serif;
@@ -1732,7 +1737,7 @@ body {
     -webkit-transform: translateZ(0) translateX(0) rotateY(0deg);
     transform: translateZ(0) translateX(0) rotateY(0deg);
     min-height: 100%;
-    outline: 30px solid #0f33ff;
+    outline: none;
     -webkit-transition: -webkit-transform .4s;
     transition: -webkit-transform .4s;
     transition: transform .4s;
