@@ -291,7 +291,7 @@ body {
     width: 100%;
     height: 100vh;
     box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
-    overflow: auto;
+    overflow: hidden
 }
 
 .l-wrapper {
@@ -982,7 +982,7 @@ body {
     height: 150px;
     margin: 0 auto;
     border-radius: 50%;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .work--lockup .slider--item-image img {
@@ -1719,7 +1719,7 @@ body {
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: auto;
+    overflow: hidden
 }
 
 .perspective--modalview {
