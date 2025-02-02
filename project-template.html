@@ -67,7 +67,7 @@
               <span></span>
             </div>
           </header>
-          <button class="header--cta"; onclick="history.back(); cta">Retour</button>
+          <button class="back-button" onclick="goBack()">← Retour</button>
           <main class="l-main-content">
             <section class="project-container">
               <div class="project-image">
@@ -92,5 +92,10 @@
     </ul>
   </div>
   <script src="assets/js/functions-min.js"></script>
+  <script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
 </body>
 </html>
