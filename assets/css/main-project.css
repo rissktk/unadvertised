@@ -1889,6 +1889,7 @@ body {
     border: 2px solid #0f33ff;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    position: absolute; /* Position relative au header */
     top: calc(70px + 40px); /* 70px = hauteur du header + 40px d’espace */
     left: 20px; /* Ajuste la distance depuis la gauche */
     z-index: 100;
